@@ -1,10 +1,12 @@
+import PropTypes from 'prop-types';
+
 const Exp_prop = (props) => {
   return (
     <>
       <div className="shadow-2xl rounded-3xl border-2 bg-[#e1e1e1] dark:bg-transparent border-[#00040f] h-[350px] max-sm:h-[300px] p-8 hover:bg-gradient-to-tl from-[#e1e1e1] to-[#fff] dark:from-[#00040F] dark:to-[#0B274C]">
         <div className="HEADER flex ">
           <div className=" max-w-[80px] pr-3 mr-3">
-            <img src={props.img} alt="" />
+            <img src={props.img} alt="my image" />
           </div>
 
           <div className="max-w-[300px]">
@@ -26,4 +28,13 @@ const Exp_prop = (props) => {
     </>
   );
 };
+
+Exp_prop.propTypes = {
+  img: PropTypes.string.isRequired,       // img should be a string (URL or path) and is required
+  title: PropTypes.string.isRequired,     // title should be a string and is required
+  subtitle: PropTypes.string.isRequired,  // subtitle should be a string and is required
+  date: PropTypes.string.isRequired,      // date should be a string and is required
+  para: PropTypes.string.isRequired,      // para should be a string and is required
+};
+
 export default Exp_prop;

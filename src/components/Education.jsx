@@ -37,7 +37,7 @@ const Education = () => {
 
             <div className="mt-7 flex flex-col gap-5 text-left pl-4">
               <h3 className="capitalize  text-slate-800 dark:text-slate-300 text-xl max-sm:text-lg">
-                Bachelor's Degree in Information Systems
+                Bachelor Degree in Information Systems
               </h3>
               <p className="italic capitalize text-gray-500 dark:text-slate-500 text-xl max-sm:text-lg leading-9">
                 November 2012 - may 2016
